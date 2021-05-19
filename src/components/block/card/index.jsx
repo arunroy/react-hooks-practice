@@ -1,9 +1,22 @@
 import "./styles.scss";
-export default function Card({ children }) {
+import classNames from "classnames";
+export default function Card({
+  children,
+  onSelectCard,
+  btnId,
+  isSelected,
+  cardIndex
+}) {
+  var cardClasses = classNames({
+    card: true,
+    selected: isSelected
+  });
   return (
-    <div className="card">
+    <div className={cardClasses}>
       <span>{children}</span>
-      <button>Select this</button>
+      <button id={btnId} onClick={onSelectCard} data-card-index={cardIndex}>
+        Select this
+      </button>
     </div>
   );
 }

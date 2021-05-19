@@ -1,7 +1,7 @@
 .card {
   align-items: center;
   background-color: #dfdfdf;
-  color: black;
+  color: rgb(50, 11, 190);
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -10,12 +10,9 @@
   text-align: center;
   justify-content: center;
   width: 12rem;
+}
 
-   span {
-    color: rgb(50, 11, 190);
-   }
-
-   button {
-     justify-content: flex-end;
-   }
+.selected {
+  background-color: #1c72f3;
+  color: white;
 }
