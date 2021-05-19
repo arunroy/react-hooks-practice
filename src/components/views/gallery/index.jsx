@@ -3,13 +3,14 @@ import Card from "../../block/card";
 export default function Gallery() {
   return (
     <CardContainer>
-      <Card>This is first card</Card>
-      <Card>This is second card</Card>
-      <Card>This is third card</Card>
-      <Card>This is third card</Card>
-      <Card>This is third card</Card>
-      <Card>This is third card</Card>
-      <Card>This is third card</Card>
+      {[...Array(20)].map(function getCard(_, index) {
+        return (
+          <Card key={index} cardIndex={index}>
+            {" "}
+            {`Card #${index}`}{" "}
+          </Card>
+        );
+      })}
     </CardContainer>
   );
 }
