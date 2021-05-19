@@ -1,6 +1,6 @@
 import Card from "./components/card";
 import CardContainer from "./components/card-container";
-import "./styles.css";
+import "./styles.scss";
 
 export default function App() {
   return (
