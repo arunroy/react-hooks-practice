@@ -1,0 +1,6 @@
+.card-container {
+  border: 1px solid navajowhite;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
